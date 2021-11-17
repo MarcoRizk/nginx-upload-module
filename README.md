@@ -75,7 +75,7 @@ Enables resumable uploads.
 **Context:** `server,location`
 
 Specifies a directory to which output files will be saved to. The
-directory could be hashed. In this case all subdirectories should exist
+directory could be hashed, if it's a hashed directory it should contain subdirectories from 0 to 9 and all subdirectories should exist
 before starting nginx.
 
 ### upload_state_store
@@ -85,7 +85,7 @@ before starting nginx.
 **Context:** `server,location`
 
 Specifies a directory that will contain state files for resumable
-uploads. The directory could be hashed. In this case all subdirectories
+uploads. The directory could be hashed.if it's a hashed directory it should contain subdirectories from a to z and all subdirectories
 should exist before starting nginx.
 
 ### upload_store_access
